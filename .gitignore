@@ -13,6 +13,11 @@ yarn-error.log*
 # Dependencies (if tooling is added later)
 node_modules/
 
+# Python
+.venv/
+__pycache__/
+*.pyc
+
 # Builds / output (if added later)
 dist/
 build/
