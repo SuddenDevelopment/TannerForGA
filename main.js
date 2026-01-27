@@ -41,30 +41,8 @@ function setupMobileNav() {
   });
 }
 
-function setupCopyLink() {
-  const button = $('#copy-link');
-  if (!button) return;
-
-  button.addEventListener('click', async () => {
-    const url = window.location.href;
-    try {
-      await navigator.clipboard.writeText(url);
-      button.textContent = 'Copied!';
-      window.setTimeout(() => {
-        button.textContent = 'Copy page link';
-      }, 1500);
-    } catch {
-      button.textContent = 'Copy failed';
-      window.setTimeout(() => {
-        button.textContent = 'Copy page link';
-      }, 1500);
-    }
-  });
-}
-
 window.addEventListener('scroll', setHeaderElevation, { passive: true });
 window.addEventListener('load', () => {
   setHeaderElevation();
   setupMobileNav();
-  setupCopyLink();
 });

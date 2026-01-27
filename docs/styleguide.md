@@ -167,7 +167,7 @@ Use these repeating section patterns:
 1) **Hero**
 - Name + office/district
 - Tagline
-- CTA cluster (Donate / Volunteer / Updates)
+- CTA cluster (Donate / Volunteer / Email Us)
 
 2) **About**
 - 1–2 paragraphs + headshot
