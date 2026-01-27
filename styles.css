@@ -416,9 +416,9 @@ input:focus-visible {
 .issue-content > h3 {
   margin: -1.25rem -1.25rem 1rem;
   padding: 0.95rem 1.25rem;
-  background: linear-gradient(90deg, rgba(6, 44, 83, 0.14), rgba(6, 44, 83, 0.04));
+  background: linear-gradient(90deg, rgba(6, 44, 83, 0.04), rgba(6, 44, 83, 0.14));
   border-bottom: 1px solid var(--border);
-  border-left: 6px solid var(--navy);
+  border-right: 6px solid var(--navy);
   color: var(--navy);
 }
 
