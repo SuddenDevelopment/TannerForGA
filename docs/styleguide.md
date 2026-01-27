@@ -18,7 +18,7 @@ Goal: capture the *best, reusable* visual/structural ideas (not copy exact desig
 All four sites prioritize a fast “who/what/where” read:
 - Candidate name + office/district
 - A short, values-forward tagline
-- One primary CTA (almost always **Donate**) plus a secondary (**Volunteer**, **Get Updates**, or **Request a Yard Sign**)
+- One primary CTA (almost always **Donate**) plus a secondary (**Volunteer**, **Request a Yard Sign**, or **Email Us**)
 
 ### 1.2 Simple navigation + persistent CTA
 A compact header with:
@@ -142,7 +142,7 @@ Recommended layout rules:
 ### 3.4 Buttons + CTAs
 Recommended hierarchy:
 - **Primary CTA:** filled button (Donate).
-- **Secondary CTA:** outline button (Volunteer / Get Updates).
+- **Secondary CTA:** outline button (Volunteer / Email Us).
 - **Tertiary CTA:** text link (Request a yard sign, Events).
 
 Button shape and feel:

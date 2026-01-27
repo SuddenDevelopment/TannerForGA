@@ -533,15 +533,33 @@ input {
 
 .footer-inner {
   display: flex;
-  align-items: start;
+  align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.footer-logo-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--white);
+  padding: 0.85rem 1.15rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
 }
 
 .footer-logo {
-  width: 56px;
-  height: 56px;
-  filter: drop-shadow(0 6px 18px rgba(0, 0, 0, 0.22));
+  height: 200px;
+  width: auto;
+  max-width: min(520px, 100%);
+  object-fit: contain;
 }
 
 .site-footer .micro {
@@ -551,6 +569,8 @@ input {
 .footer-links {
   display: grid;
   gap: 0.5rem;
+  justify-items: end;
+  text-align: right;
 }
 
 .footer-links a {
@@ -612,5 +632,16 @@ input {
   .site-nav a:hover {
     background: rgba(6, 44, 83, 0.06);
     text-decoration: none;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-links {
+    justify-items: center;
+    text-align: center;
   }
 }

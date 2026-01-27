@@ -41,46 +41,6 @@ function setupMobileNav() {
   });
 }
 
-function setupUpdatesForm() {
-  const form = $('#updates-form');
-  const status = $('#updates-status');
-  if (!form || !status) return;
-
-  function getList() {
-    try {
-      const raw = localStorage.getItem('tanner_signups');
-      if (!raw) return [];
-      const parsed = JSON.parse(raw);
-      return Array.isArray(parsed) ? parsed : [];
-    } catch {
-      return [];
-    }
-  }
-
-  function setList(list) {
-    localStorage.setItem('tanner_signups', JSON.stringify(list));
-  }
-
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-
-    const data = new FormData(form);
-    const email = String(data.get('email') || '').trim();
-
-    if (!email) {
-      status.textContent = 'Please enter an email.';
-      return;
-    }
-
-    const list = getList();
-    const next = [{ email, ts: new Date().toISOString() }, ...list].slice(0, 200);
-    setList(next);
-
-    form.reset();
-    status.textContent = 'Thanks — you’re signed up for updates.';
-  });
-}
-
 function setupCopyLink() {
   const button = $('#copy-link');
   if (!button) return;
@@ -106,6 +66,5 @@ window.addEventListener('scroll', setHeaderElevation, { passive: true });
 window.addEventListener('load', () => {
   setHeaderElevation();
   setupMobileNav();
-  setupUpdatesForm();
   setupCopyLink();
 });
