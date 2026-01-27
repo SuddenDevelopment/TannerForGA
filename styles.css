@@ -424,7 +424,8 @@ input:focus-visible {
 
 .issue:nth-child(even) .issue-content > h3 {
   background: linear-gradient(90deg, rgba(209, 34, 44, 0.14), rgba(209, 34, 44, 0.04));
-  border-left-color: var(--red);
+  border-right: none;
+  border-left: 6px solid var(--red);
   color: rgba(16, 24, 39, 0.92);
 }
 
