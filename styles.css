@@ -246,7 +246,7 @@ input:focus-visible {
 }
 
 .btn-secondary {
-  background: rgba(6, 44, 83, 0.08);
+  background: rgba(255, 255, 255, 0.92);
   border-color: rgba(6, 44, 83, 0.18);
   color: var(--navy);
 }
