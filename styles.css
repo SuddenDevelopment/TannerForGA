@@ -577,6 +577,35 @@ input {
   color: rgba(255, 255, 255, 0.9);
 }
 
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.social-link:hover {
+  opacity: 0.75;
+  transform: scale(1.1);
+}
+
+.site-nav .social-link {
+  color: rgba(16, 24, 39, 0.88);
+}
+
+.site-footer .social-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 @media (max-width: 960px) {
   .hero-inner {
     grid-template-columns: 1fr;
